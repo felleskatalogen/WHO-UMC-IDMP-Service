@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Task xmlns="http://hl7.org/fhir">
+   <meta>
+      <profile value="http://who-umc.org/idmp/StructureDefinition/Task-who-php-gsid"/>
+   </meta>
+   <contained>
+      <SubstanceDefinition>
+         <id value="ID-90CC1E37-24DD-496F-A7F5-D9B8B816E900"/>
+         <meta>
+            <profile value="http://who-umc.org/idmp/StructureDefinition/SubstanceDefinition-req"/>
+         </meta>
+         <status>
+            <coding>
+               <system value="http://hl7.org/fhir/publication-status"/>
+               <code value="draft"/>
+            </coding>
+         </status>
+         <domain>
+            <coding>
+               <system value="http://hl7.org/fhir/medicinal-product-domain"/>
+               <code value="Human"/>
+            </coding>
+            <text value="Human use"/>
+         </domain>
+         <code>
+            <code>
+               <coding>
+                  <system value="http://legemiddelverket.no/FEST/VirkestoffID"/>
+                  <code value="ID_90CC1E37-24DD-496F-A7F5-D9B8B816E900"/>
+               </coding>
+            </code>
+         </code>
+         <name>
+            <name value="Valsartan"/>
+            <preferred value="true"/>
+            <language>
+               <coding>
+                  <system value="urn:ietf:bcp:47"/>
+                  <code value="en"/>
+               </coding>
+            </language>
+         </name>
+      </SubstanceDefinition>
+   </contained>
+   <identifier>
+      <system value="https://gravitatehealth.eu/fhir/nordic-epi/umc-gsid-request"/>
+      <value value="ID_90CC1E37-24DD-496F-A7F5-D9B8B816E900"/>
+   </identifier>
+   <status value="requested"/>
+   <intent value="proposal"/>
+   <authoredOn value="2024-09-10"/>
+   <lastModified value="2024-09-10"/>
+   <input>
+      <type>
+         <coding>
+            <system value="http://who-umc.org/idmp/CodeSystem/task-input-type"/>
+            <code value="substance-request-resource"/>
+         </coding>
+      </type>
+      <valueReference>
+         <reference value="#ID-90CC1E37-24DD-496F-A7F5-D9B8B816E900"/>
+      </valueReference>
+   </input>
+</Task>
