@@ -17,6 +17,11 @@
       "code": "IU",
       "display": "arbitrary international unit",
       "definition": "arbitrary international unit"
+    },
+    {
+      "code": "dose",
+      "display": "dose",
+      "definition": "dose"
     }
   ]
 }

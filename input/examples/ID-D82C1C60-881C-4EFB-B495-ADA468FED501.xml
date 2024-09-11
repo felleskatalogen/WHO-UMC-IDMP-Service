@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Task xmlns="http://hl7.org/fhir">
+   <meta>
+      <profile value="http://who-umc.org/idmp/StructureDefinition/Task-who-php-phpid"/>
+   </meta>
+   <contained>
+      <MedicinalProductDefinition>
+         <id value="Diabetes-MPD-134"/>
+         <meta>
+            <profile value="http://who-umc.org/idmp/StructureDefinition/MedicinalProductDefinition-who-php-req"/>
+         </meta>
+         <identifier>
+            <system value="http://legemiddelverket.no/FEST/LegemiddelMerkevareID"/>
+            <value value="ID_D82C1C60-881C-4EFB-B495-ADA468FED501"/>
+         </identifier>
+         <attachedDocument>
+            <display value="https://www.felleskatalogen.no/medisin/sok?sokord=060677"/>
+         </attachedDocument>
+         <contact>
+            <contact>
+               <reference value="#felleskatalogen"/>
+            </contact>
+         </contact>
+         <name>
+            <productName value="Victoza inj, oppl 6 mg/ml"/>
+            <usage>
+               <country>
+                  <coding>
+                     <system value="urn:iso:std:iso:3166"/>
+                     <code value="NOR"/>
+                  </coding>
+               </country>
+               <jurisdiction>
+                  <coding>
+                     <system value="urn:iso:std:iso:3166"/>
+                     <code value="NOR"/>
+                  </coding>
+               </jurisdiction>
+               <language>
+                  <coding>
+                     <system value="urn:ietf:bcp:47"/>
+                     <code value="no"/>
+                  </coding>
+               </language>
+            </usage>
+         </name>
+      </MedicinalProductDefinition>
+   </contained>
+   <contained>
+      <Organization>
+         <id value="felleskatalogen"/>
+         <identifier>
+            <system value="https://felleskatalogen.no/organisasjon"/>
+            <value value="felleskatalogen"/>
+         </identifier>
+         <name value="felleskatalogen"/>
+         <contact>
+            <telecom>
+               <system value="email"/>
+               <value value="post@felleskatalogen.no"/>
+            </telecom>
+         </contact>
+      </Organization>
+   </contained>
+   <contained>
+      <Ingredient>
+         <id value="ID-1C261886-5B73-4E6E-A491-CC40D42BE8F4"/>
+         <meta>
+            <profile value="http://who-umc.org/idmp/StructureDefinition/Ingredient-who-php"/>
+         </meta>
+         <identifier>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffMedStyrkeID"/>
+            <value value="ID_1C261886-5B73-4E6E-A491-CC40D42BE8F4"/>
+         </identifier>
+         <status value="active"/>
+         <role>
+            <coding>
+               <system value="https://spor.ema.europa.eu/v1/lists/100000072050/terms/"/>
+               <code value="100000072072"/>
+               <display value="Virkestoff"/>
+            </coding>
+         </role>
+         <substance>
+            <code>
+               <concept>
+                  <text value="Liraglutide"/>
+               </concept>
+            </code>
+            <strength>
+               <presentationRatio>
+                  <numerator>
+                     <value value="6"/>
+                     <unit value="mg"/>
+                  </numerator>
+                  <denominator>
+                     <value value="1"/>
+                     <unit value="ml"/>
+                  </denominator>
+               </presentationRatio>
+            </strength>
+         </substance>
+      </Ingredient>
+   </contained>
+   <identifier>
+      <system value="https://gravitatehealth.eu/fhir/nordic-epi/umc-phpid-request"/>
+      <value value="ID_D82C1C60-881C-4EFB-B495-ADA468FED501"/>
+   </identifier>
+   <status value="requested"/>
+   <intent value="proposal"/>
+   <authoredOn value="2024-09-11"/>
+   <lastModified value="2024-09-11"/>
+   <input>
+      <type>
+         <coding>
+            <system value="http://who-umc.org/idmp/CodeSystem/task-input-type"/>
+            <code value="mpd-request-resource"/>
+         </coding>
+      </type>
+      <valueReference>
+         <reference value="#Diabetes-MPD-134"/>
+      </valueReference>
+   </input>
+   <input>
+      <type>
+         <coding>
+            <system value="http://who-umc.org/idmp/CodeSystem/task-input-type"/>
+            <code value="organization-request-resource"/>
+         </coding>
+      </type>
+      <valueReference>
+         <reference value="#felleskatalogen"/>
+      </valueReference>
+   </input>
+   <input>
+      <type>
+         <coding>
+            <system value="http://who-umc.org/idmp/CodeSystem/task-input-type"/>
+            <code value="ingredient-request-resource"/>
+         </coding>
+      </type>
+      <valueReference>
+         <reference value="#ID-1C261886-5B73-4E6E-A491-CC40D42BE8F4"/>
+      </valueReference>
+   </input>
+</Task>
