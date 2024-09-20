@@ -18,7 +18,7 @@
          </attachedDocument>
          <contact>
             <contact>
-               <reference value="#novo-nordisk"/>
+               <reference value="#mah"/>
             </contact>
          </contact>
          <name>
@@ -48,7 +48,7 @@
    </contained>
    <contained>
       <Organization>
-         <id value="novo-nordisk"/>
+         <id value="mah"/>
          <meta>
             <profile value="http://who-umc.org/idmp/StructureDefinition/MarketingAuthorizationHolder-who-php"/>
          </meta>
@@ -92,7 +92,6 @@
                   <coding>
                      <system value="http://who-umc.org/idmp/gsid"/>
                      <code value="GSID9L3K0G6DYX0YD"/>
-                     <display value="Liraglutide"/>
                   </coding>
                   <text value="Liraglutide"/>
                </concept>
@@ -118,8 +117,8 @@
    </identifier>
    <status value="requested"/>
    <intent value="proposal"/>
-   <authoredOn value="2024-09-11"/>
-   <lastModified value="2024-09-11"/>
+   <authoredOn value="2024-09-20"/>
+   <lastModified value="2024-09-20"/>
    <input>
       <type>
          <coding>
@@ -139,7 +138,7 @@
          </coding>
       </type>
       <valueReference>
-         <reference value="#novo-nordisk"/>
+         <reference value="#mah"/>
       </valueReference>
    </input>
    <input>

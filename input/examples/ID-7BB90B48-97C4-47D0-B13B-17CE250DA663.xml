@@ -18,7 +18,7 @@
          </attachedDocument>
          <contact>
             <contact>
-               <reference value="#felleskatalogen"/>
+               <reference value="#mah"/>
             </contact>
          </contact>
          <name>
@@ -48,16 +48,19 @@
    </contained>
    <contained>
       <Organization>
-         <id value="felleskatalogen"/>
+         <id value="mah"/>
+         <meta>
+            <profile value="http://who-umc.org/idmp/StructureDefinition/MarketingAuthorizationHolder-who-php"/>
+         </meta>
          <identifier>
             <system value="https://felleskatalogen.no/organisasjon"/>
-            <value value="felleskatalogen"/>
+            <value value="novartis-europharm-limited"/>
          </identifier>
-         <name value="felleskatalogen"/>
+         <name value="Novartis Europharm Limited"/>
          <contact>
             <telecom>
                <system value="email"/>
-               <value value="post@felleskatalogen.no"/>
+               <value value="medinfo.nordics@novartis.com"/>
             </telecom>
          </contact>
       </Organization>
@@ -73,6 +76,9 @@
             <value value="ID_883EBDD7-A8A2-4523-B187-3AEB02E795E7"/>
          </identifier>
          <status value="active"/>
+         <for>
+            <reference value="#COPD-MPD-221"/>
+         </for>
          <role>
             <coding>
                <system value="https://spor.ema.europa.eu/v1/lists/100000072050/terms/"/>
@@ -83,6 +89,10 @@
          <substance>
             <code>
                <concept>
+                  <coding>
+                     <system value="http://who-umc.org/idmp/gsid"/>
+                     <code value="GSID2THV6TAR577P0"/>
+                  </coding>
                   <text value="Sacubitril"/>
                </concept>
             </code>
@@ -106,6 +116,9 @@
             <value value="ID_7614CC6A-BFBD-4DDB-862F-DC37B6BCBC10"/>
          </identifier>
          <status value="active"/>
+         <for>
+            <reference value="#COPD-MPD-221"/>
+         </for>
          <role>
             <coding>
                <system value="https://spor.ema.europa.eu/v1/lists/100000072050/terms/"/>
@@ -116,6 +129,10 @@
          <substance>
             <code>
                <concept>
+                  <coding>
+                     <system value="http://who-umc.org/idmp/gsid"/>
+                     <code value="ID_90CC1E37-24DD-496F-A7F5-D9B8B816E900"/>
+                  </coding>
                   <text value="Valsartan"/>
                </concept>
             </code>
@@ -134,8 +151,8 @@
    </identifier>
    <status value="requested"/>
    <intent value="proposal"/>
-   <authoredOn value="2024-09-11"/>
-   <lastModified value="2024-09-11"/>
+   <authoredOn value="2024-09-20"/>
+   <lastModified value="2024-09-20"/>
    <input>
       <type>
          <coding>
@@ -155,7 +172,7 @@
          </coding>
       </type>
       <valueReference>
-         <reference value="#felleskatalogen"/>
+         <reference value="#mah"/>
       </valueReference>
    </input>
    <input>

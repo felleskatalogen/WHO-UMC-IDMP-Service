@@ -18,7 +18,7 @@
          </attachedDocument>
          <contact>
             <contact>
-               <reference value="#felleskatalogen"/>
+               <reference value="#mah"/>
             </contact>
          </contact>
          <name>
@@ -48,16 +48,19 @@
    </contained>
    <contained>
       <Organization>
-         <id value="felleskatalogen"/>
+         <id value="mah"/>
+         <meta>
+            <profile value="http://who-umc.org/idmp/StructureDefinition/MarketingAuthorizationHolder-who-php"/>
+         </meta>
          <identifier>
             <system value="https://felleskatalogen.no/organisasjon"/>
-            <value value="felleskatalogen"/>
+            <value value="orion-corporation"/>
          </identifier>
-         <name value="felleskatalogen"/>
+         <name value="Orion Corporation - Espoo"/>
          <contact>
             <telecom>
                <system value="email"/>
-               <value value="post@felleskatalogen.no"/>
+               <value value="medinfo@orionpharma.com"/>
             </telecom>
          </contact>
       </Organization>
@@ -73,6 +76,9 @@
             <value value="ID_6207C97D-F04F-430A-8F1B-280F2D37925E"/>
          </identifier>
          <status value="active"/>
+         <for>
+            <reference value="#COPD-MPD-60"/>
+         </for>
          <role>
             <coding>
                <system value="https://spor.ema.europa.eu/v1/lists/100000072050/terms/"/>
@@ -83,6 +89,10 @@
          <substance>
             <code>
                <concept>
+                  <coding>
+                     <system value="http://who-umc.org/idmp/gsid"/>
+                     <code value="GSID5F15DZZ28F08D"/>
+                  </coding>
                   <text value="Budesonide"/>
                </concept>
             </code>
@@ -107,8 +117,8 @@
    </identifier>
    <status value="requested"/>
    <intent value="proposal"/>
-   <authoredOn value="2024-09-11"/>
-   <lastModified value="2024-09-11"/>
+   <authoredOn value="2024-09-20"/>
+   <lastModified value="2024-09-20"/>
    <input>
       <type>
          <coding>
@@ -128,7 +138,7 @@
          </coding>
       </type>
       <valueReference>
-         <reference value="#felleskatalogen"/>
+         <reference value="#mah"/>
       </valueReference>
    </input>
    <input>
