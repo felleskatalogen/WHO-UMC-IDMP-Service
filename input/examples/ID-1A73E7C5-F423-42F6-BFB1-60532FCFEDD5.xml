@@ -76,6 +76,9 @@
             <value value="ID_1C261886-5B73-4E6E-A491-CC40D42BE8F4"/>
          </identifier>
          <status value="active"/>
+         <for>
+            <reference value="#Diabetes-MPD-98"/>
+         </for>
          <role>
             <coding>
                <system value="https://spor.ema.europa.eu/v1/lists/100000072050/terms/"/>
