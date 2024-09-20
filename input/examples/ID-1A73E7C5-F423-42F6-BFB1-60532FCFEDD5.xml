@@ -18,7 +18,7 @@
          </attachedDocument>
          <contact>
             <contact>
-               <reference value="#felleskatalogen"/>
+               <reference value="#novo-nordisk"/>
             </contact>
          </contact>
          <name>
@@ -48,16 +48,19 @@
    </contained>
    <contained>
       <Organization>
-         <id value="felleskatalogen"/>
+         <id value="novo-nordisk"/>
+         <meta>
+            <profile value="http://who-umc.org/idmp/StructureDefinition/MarketingAuthorizationHolder-who-php"/>
+         </meta>
          <identifier>
             <system value="https://felleskatalogen.no/organisasjon"/>
-            <value value="felleskatalogen"/>
+            <value value="novo-nordisk"/>
          </identifier>
-         <name value="felleskatalogen"/>
+         <name value="Novo Nordisk A/S"/>
          <contact>
             <telecom>
                <system value="email"/>
-               <value value="post@felleskatalogen.no"/>
+               <value value="kundeservice-norge@novonordisk.com"/>
             </telecom>
          </contact>
       </Organization>
@@ -83,6 +86,11 @@
          <substance>
             <code>
                <concept>
+                  <coding>
+                     <system value="http://who-umc.org/idmp/gsid"/>
+                     <code value="GSID9L3K0G6DYX0YD"/>
+                     <display value="Liraglutide"/>
+                  </coding>
                   <text value="Liraglutide"/>
                </concept>
             </code>
@@ -128,7 +136,7 @@
          </coding>
       </type>
       <valueReference>
-         <reference value="#felleskatalogen"/>
+         <reference value="#novo-nordisk"/>
       </valueReference>
    </input>
    <input>
